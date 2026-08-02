@@ -1,3 +1,4 @@
+import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
 
 import '../../design_system/widgets/app_card.dart';
@@ -35,11 +36,13 @@ class HomePage extends StatelessWidget {
           ),
 
           AppCard(
-            icon: Icons.bloodtype,
-            title: 'Gasometria',
-            subtitle: 'Interpretação ácido-base',
-            onTap: () {},
-          ),
+  icon: Icons.bloodtype,
+  title: 'Gasometria',
+  subtitle: 'Interpretação ácido-base',
+  onTap: () {
+    context.go('/gasometry');
+  },
+),
 
           AppCard(
             icon: Icons.bolt,
