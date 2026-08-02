@@ -1,3 +1,4 @@
+import '../design_system/theme.dart';
 import 'package:flutter/material.dart';
 import '../features/home/home_page.dart';
 
@@ -9,10 +10,7 @@ class NurseAssistApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'NurseAssist',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: const Color(0xFF1565C0),
-      ),
+      theme: AppTheme.lightTheme,
       home: const HomePage(),
     );
   }
